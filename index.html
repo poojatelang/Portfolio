@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme" id="body">
+    <div id="progress">
+        <span id="progress-value"> &#x1F815;</span>
+    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo4.jpeg" alt="logo"> -->
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Love Code</h3>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-moon" id="moon" onclick="themeChange()"></i>
+                    <i class="fas fa-solid fa-x fas1" onclick="closemenu()"></i>
+                    <li class="colors">
+
+                        <i class="fa-solid fa-palette" id="palette"></i>
+                        <div class="colors-detail" id="color-detail">
+                            <i class="fa-solid fa-circle " style="color:#1ff956;" onclick="change()"></i>
+                            <i class="fa-solid fa-circle " style="color:#761ff9;" onclick="change()"></i>
+                            <i class="fa-solid fa-circle " style="color:#f91f39;" onclick="change()"></i>
+                            <i class="fa-solid fa-circle " style="color:#f9bb1f;" onclick="change()"></i>
+                        </div>
+
+                    </li>
+                </ul>
+                <i class="fas fa-solid fa-bars fas1" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Pooja</span> Telang from Belgaum</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------about section------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A goal-oriented Entry Level Frontend Developer with knowledge of HTML, CSS, JavaScript and React
+                        seeking to use technical proficiency and creativity to develop engaging user
+                        experiences and advance in a professional career. Looking to leverage effective debugging, code
+                        optimization and project collaboration capabilities to produce applications that exceed user
+                        expectations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id='skills'>
+                        <ul>
+                            <li><span>HTML</span><br /> Creating web pages on WWW</li>
+                            <li><span>CSS</span> <br />For styling HTML content</li>
+                            <li><span>Javascript</span><br />Used to make web pages interative</li>
+                            <li><span>React</span> <br />Framework used to handle complex UI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>worked as dev</span><br /> Creating web pages on WWW</li>
+                            <li><span>CSS</span> <br />For styling HTML content</li>
+                            <li><span>Javascript</span><br />Used to make web pages interative</li>
+                            <li><span>React</span> <br />Framework used to handle complex UI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>enginnering</span><br /> Creating web pages on WWW</li>
+                            <li><span>CSS</span> <br />For styling HTML content</li>
+                            <li><span>Javascript</span><br />Used to make web pages interative</li>
+                            <li><span>React</span> <br />Framework used to handle complex UI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------service section----------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Blogs</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>HTML stands for HyperText Markup Language.HTML is the standard language
+                        that is used for creating webpages and web applications.</p>
+                    <a href="blog.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language.CSS is a cornerstone technology of the
+                        World Wide Web, alongside HTML and
+                        JavaScript.</p>
+                    <a href="blog.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                    <p>JavaScript is a dynamic programming language that's used for web development, in web
+                        applications, for game development, and lots more.</p>
+                    <a href="blog.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Alias, ipsum.</p>
+                        <a href="work.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Alias, ipsum.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Alias, ipsum.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> poojamtelang@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9898989898</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="submit-to-google-sheet">
+                        <input type="text" name='Name' placeholder="Your Name" required>
+                        <input type="email" name='Email' placeholder="Your Email" required>
+                        <textarea name='Message' rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright @ Pooja. Made with <i class="fa-solid fa-heart"></i> by Love code</p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

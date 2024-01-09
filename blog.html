@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <nav>
+        <!-- <img src="images/logo4.jpeg" alt="logo"> -->
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <h3>Love Code</h3>
+        </div>
+        <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="work.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-moon" id="moon" onclick="themeChange()"></i>
+            <i class="fas fa-solid fa-x fas1" onclick="closemenu()"></i>
+            <li class="colors">
+
+                <i class="fa-solid fa-palette" id="palette"></i>
+                <div class="colors-detail" id="color-detail">
+                    <i class="fa-solid fa-circle " style="color:#1ff956;" onclick="change()"></i>
+                    <i class="fa-solid fa-circle " style="color:#761ff9;" onclick="change()"></i>
+                    <i class="fa-solid fa-circle " style="color:#f91f39;" onclick="change()"></i>
+                    <i class="fa-solid fa-circle " style="color:#f9bb1f;" onclick="change()"></i>
+                </div>
+
+            </li>
+        </ul>
+        <i class="fas fa-solid fa-bars fas1" onclick="openmenu()"></i>
+    </nav>
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title title">Blogs Content</h1>
+            <div class="blogs-content">
+                <div class="blogs">
+                    <img src="images/html.jpg" alt="html">
+                    <p>HTML stands for HyperText Markup Language, which can be a confusing term for many beginners. The
+                        best way to explain HTML is to examine the meaning of each word.HTML is the standard language
+                        that is used for creating webpages and web applications.  </p>
+                    <a href="#" class="btn btn3">See more</a>
+                </div>
+                <div class="blogs">
+                    <img src="images/css.jpg" alt="html">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
+                        document written in a markup language such as HTML or XML (including XML dialects such as SVG,
+                        MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and
+                        JavaScript.</p>
+                    <a href="#" class="btn btn3">See more</a>
+                </div>
+                <div class="blogs">
+                    <img src="images/js.jpg" alt="html">
+                    <p>JavaScript is a dynamic programming language that's used for web development, in web
+                        applications, for game development, and lots more. It allows you to implement dynamic features
+                        on web pages that cannot be done with only HTML and CSS.</p>
+                    <a href="#" class="btn btn3">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright @ Pooja. Made with <i class="fa-solid fa-heart"></i> by Love code</p>
+           
+        </div>
+    </footer>
+    <div id="progress">
+        <span id="progress-value"> &#x1F815;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
