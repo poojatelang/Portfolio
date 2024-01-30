@@ -1,19 +1,8 @@
-
-//   const scriptURL = 'https://script.google.com/macros/s/AKfycbxTf_rl0J_8s9IikK_0eTI9Kc2fjsn5hhl-1MaoYwfDz73DUNfnRxjABMNxLAtRFWfk1Q/exec'
-//   const form = document.forms['submit-to-google-sheet']
-
-//   form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//       .then(response => console.log('Success!', response))
-//       .catch(error => console.error('Error!', error.message))
-//   })
-// -------------------------------------------------------------------------
 let body=document.getElementById("body");
 
 function themeChange(){
     body.classList.toggle('dark-theme');
-    // moon.style.color="var(--secandaryColor)";
+   
 }
 // ----------------------------------------------------------------------------------
 let colorspalette=document.getElementById("palette");
@@ -34,13 +23,7 @@ function change(){
 }
     });
 }
-// -----------------------------------------------------------------------------------------
-// let myBtn=document.getElementById("myBtn");
-// function topFunction() {
-//     document.body.scrollTop = 0; // For Safari
-//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-//   }
 //   --------------------------------------------------------------------------------------------
 
 let calcScrollValue = () => {
